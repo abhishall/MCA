@@ -75,11 +75,17 @@ def printRecords(filename, noOfRecords):
         n = pickle.load(f)
         print(str(i) + " key : " + str(n.getKey()))
 
-try:
+def mergeSort(filename):
+    '''
+    Objective: To sort the records in the given file using mergeSort.
+               *** This function changes the content of the file entered.
+    Input Parameter:
+           filename: The file in which records are to be sorted.
+    '''
+    '''
+    Approach: We set a variable named blockSize initially to 4. Then read first blockSize records from the file entered, sort them 
+    '''
     
-
-except EOFError:
-    pass
 
 
 saveRecords("f.txt", 100)
